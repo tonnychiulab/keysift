@@ -107,6 +107,11 @@ KeySift は値を標準出力、標準エラー、JSON に書き込みません�
 
 セキュリティ上の問題は [SECURITY.md](SECURITY.md) の手順で非公開報告してください。
 
+## ショート動画
+
+- [YouTube Shorts／Instagram Reels 用動画をダウンロード](https://github.com/tonnychiulab/keysift/releases/download/v1.0.0/keysift-short-zh-TW.mp4)
+- [絵コンテ、レンダリング手順、投稿文を確認](media/README.md)
+
 ## 開発
 
 ```console

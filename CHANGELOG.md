@@ -12,3 +12,5 @@ All notable changes to KeySift are documented in this file. This project follows
 - Strict parsing for portable keys, quotes, comments, exports, and duplicate detection.
 - Installable .NET global tool package.
 - Traditional Chinese, English, and Japanese documentation.
+- Traditional Chinese social short video, reproducible renderer, storyboard, and publishing copy.
+- Official-source research for a shared YouTube Shorts and Instagram Reels output profile.

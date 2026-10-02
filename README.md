@@ -107,6 +107,11 @@ KeySift 不會把值寫入標準輸出、標準錯誤或 JSON；錯誤訊息可�
 
 安全問題請依 [SECURITY.md](SECURITY.md) 私下回報。
 
+## 短影片
+
+- [下載 YouTube Shorts／Instagram Reels 成品](https://github.com/tonnychiulab/keysift/releases/download/v1.0.0/keysift-short-zh-TW.mp4)
+- [查看分鏡、渲染流程與上架文案](media/README.md)
+
 ## 開發
 
 ```console

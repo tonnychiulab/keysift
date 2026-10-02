@@ -3,6 +3,7 @@
 [Oo]bj/
 artifacts/
 TestResults/
+media/*.mp4
 
 # Local SDK and IDE state
 .dotnet/

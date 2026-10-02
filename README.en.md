@@ -107,6 +107,11 @@ KeySift does not write values to standard output, standard error, or JSON. Error
 
 Report security issues privately as described in [SECURITY.md](SECURITY.md).
 
+## Short video
+
+- [Download the YouTube Shorts / Instagram Reels video](https://github.com/tonnychiulab/keysift/releases/download/v1.0.0/keysift-short-zh-TW.mp4)
+- [View the storyboard, rendering workflow, and publishing copy](media/README.md)
+
 ## Development
 
 ```console
