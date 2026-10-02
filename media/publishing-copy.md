@@ -57,6 +57,7 @@ KeySift 只顯示鍵名與差異狀態：
 
 - 封面：`media/keysift-short-cover.png`
 - 影片：`media/keysift-short-zh-TW.mp4`
+- YouTube 字幕：語言選擇「中文（繁體）」，以「包含時間資訊」上傳 `media/keysift-short-zh-TW.srt`
 - 類別建議：Science & Technology／科技
 - YouTube 可見性：先設為「不公開」，用手機檢查 Shorts UI 後再公開
 - Instagram：開啟最高畫質上傳；發布前在預覽畫面檢查右側按鈕與底部 Caption 遮擋

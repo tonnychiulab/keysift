@@ -6,16 +6,30 @@
 
 | 檔案 | 用途 |
 | --- | --- |
-| `keysift-short-zh-TW.mp4` | 35 秒直式短影片；包含正體中文旁白與原創合成音床 |
+| `keysift-short-zh-TW.mp4` | 36 秒直式短影片；包含正體中文旁白與原創合成音床 |
 | `keysift-short-cover.png` | 1080 × 1920 封面 |
 | `keysift-short-end.png` | 結尾 CTA 靜態圖 |
 | `keysift-short-storyboard.png` | 七幕分鏡總覽 |
+| `keysift-short-zh-TW.srt` | YouTube 可直接上傳的正體中文字幕 |
+| `keysift-short-zh-TW.vtt` | WebVTT 格式的同內容字幕 |
 | `publishing-copy.md` | YouTube 與 Instagram 上架文案 |
 | `render-short.ps1` | 從零產生上述視覺、音訊與影片的腳本 |
 
 平台規格研究與官方來源見 [`../docs/social-video-specs.md`](../docs/social-video-specs.md)。
 
-完成版 MP4 可從 [GitHub Release v1.0.0](https://github.com/tonnychiulab/keysift/releases/download/v1.0.0/keysift-short-zh-TW.mp4) 直接下載；repository 不追蹤大型影片檔，避免永久增加 clone 體積。
+完成版 MP4 可從 [GitHub Release v1.0.1](https://github.com/tonnychiulab/keysift/releases/download/v1.0.1/keysift-short-zh-TW.mp4) 直接下載；repository 不追蹤大型影片檔，避免永久增加 clone 體積。
+
+## YouTube 字幕上傳
+
+建議使用 [`keysift-short-zh-TW.srt`](https://github.com/tonnychiulab/keysift/releases/download/v1.0.1/keysift-short-zh-TW.srt)：
+
+1. 進入 YouTube Studio 的「字幕」。
+2. 選擇影片並新增語言「中文（繁體）」。
+3. 選擇「上傳檔案」與「包含時間資訊」。
+4. 上傳 `.srt`；YouTube 會保留九段已對齊旁白的時間碼。
+
+[`keysift-short-zh-TW.vtt`](https://github.com/tonnychiulab/keysift/releases/download/v1.0.1/keysift-short-zh-TW.vtt) 提供給支援 WebVTT 的其他平台。字幕最後一段在 `00:35.450` 結束，早於影片的 `00:36.067`。
+
 
 ## 分鏡
 
@@ -27,7 +41,7 @@
 | 00:15–00:20 | 三層安全能力 | 鍵名級輸出、嚴格解析、穩定排序 |
 | 00:20–00:25 | Text／JSON／glob | 人與自動化都能使用 |
 | 00:25–00:30 | CI 流程 | 退出碼攔截部署，零 runtime 第三方套件 |
-| 00:30–00:35 | GitHub CTA | 開源、MIT、專案網址 |
+| 00:30–00:36 | GitHub CTA | 開源、MIT、專案網址 |
 
 ## 旁白
 
@@ -59,7 +73,7 @@ powershell -NoProfile -ExecutionPolicy Bypass -File media/render-short.ps1 `
 ## 輸出 profile
 
 - 9:16，1080 × 1920，square pixels
-- 30 fps CFR，35 秒
+- 30 fps CFR，36 秒
 - MP4 Fast Start，無 edit list
 - H.264 High Profile、progressive、yuv420p、closed GOP
 - VBR 目標 8 Mbps，上限 25 Mbps

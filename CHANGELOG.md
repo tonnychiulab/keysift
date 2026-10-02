@@ -2,6 +2,16 @@
 
 All notable changes to KeySift are documented in this file. This project follows [Semantic Versioning](https://semver.org/).
 
+## [1.0.1] - 2026-10-02
+
+### Added
+
+- Timed Traditional Chinese SRT and WebVTT captions for the social video.
+
+### Changed
+
+- Extended the final video frame so the complete narration and final caption remain visible.
+
 ## [1.0.0] - 2026-10-02
 
 ### Added

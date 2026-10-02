@@ -109,7 +109,7 @@ KeySift 不會把值寫入標準輸出、標準錯誤或 JSON；錯誤訊息可�
 
 ## 短影片
 
-- [下載 YouTube Shorts／Instagram Reels 成品](https://github.com/tonnychiulab/keysift/releases/download/v1.0.0/keysift-short-zh-TW.mp4)
+- [下載 YouTube Shorts／Instagram Reels 成品](https://github.com/tonnychiulab/keysift/releases/download/v1.0.1/keysift-short-zh-TW.mp4)
 - [查看分鏡、渲染流程與上架文案](media/README.md)
 
 ## 開發

@@ -13,7 +13,7 @@ $Height = 1920
 $Fps = 30
 $SceneDuration = 5
 $SceneCount = 7
-$TotalDuration = $SceneDuration * $SceneCount
+$TotalDuration = 36
 
 function Get-Color([string]$Hex) {
     return [System.Drawing.ColorTranslator]::FromHtml($Hex)
@@ -408,7 +408,7 @@ try {
 
     $mixFilter = "[1:a]adelay=450|450,volume=1.0[voice];[2:a]volume=1.0[bed];[voice][bed]amix=inputs=2:duration=longest:dropout_transition=0,loudnorm=I=-16:LRA=7:TP=-1.5,aresample=48000,aformat=channel_layouts=stereo,apad=pad_dur=$TotalDuration[audio]"
     & $ffmpeg -hide_banner -loglevel error -y -i $silentVideo -i $narrationPath -i $bedPath `
-        -filter_complex $mixFilter -map 0:v:0 -map "[audio]" -t $TotalDuration -vf "setsar=1" `
+        -filter_complex $mixFilter -map 0:v:0 -map "[audio]" -t $TotalDuration -vf "setsar=1,tpad=stop_mode=clone:stop_duration=1" `
         -c:v libx264 -preset medium -profile:v high -pix_fmt yuv420p -b:v 8M -maxrate 25M -bufsize 16M -r $Fps -fps_mode cfr -g 15 -keyint_min 15 -bf 2 -flags +cgop `
         -c:a aac -profile:a aac_low -ar 48000 -ac 2 -b:a 128k -movflags +faststart -use_editlist 0 `
         -metadata title="KeySift — Secret-safe .env drift detection" $OutputPath
