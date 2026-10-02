@@ -1,0 +1,22 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v5
+        with:
+          dotnet-version: 10.0.x
+      - run: dotnet restore KeySift.sln
+      - run: dotnet build KeySift.sln -c Release --no-restore
+      - run: dotnet test KeySift.sln -c Release --no-build
+      - run: dotnet pack src/KeySift -c Release --no-build -o artifacts

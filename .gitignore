@@ -1,0 +1,22 @@
+# Build output
+[Bb]in/
+[Oo]bj/
+artifacts/
+TestResults/
+
+# Local SDK and IDE state
+.dotnet/
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# OS files
+.DS_Store
+Thumbs.db

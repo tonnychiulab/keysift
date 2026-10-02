@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{F41946A6-3EDB-4CBE-A597-71D2E65CAA85}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KeySift", "src\KeySift\KeySift.csproj", "{0D838941-A377-4C15-AC9D-2D980882F4C5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{B376B7EC-B5FE-4766-9BC9-6C3FA7BDA598}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KeySift.Tests", "tests\KeySift.Tests\KeySift.Tests.csproj", "{FFBFA437-1905-4567-8EE9-4ED4BF9CDAB8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0D838941-A377-4C15-AC9D-2D980882F4C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D838941-A377-4C15-AC9D-2D980882F4C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D838941-A377-4C15-AC9D-2D980882F4C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D838941-A377-4C15-AC9D-2D980882F4C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFBFA437-1905-4567-8EE9-4ED4BF9CDAB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFBFA437-1905-4567-8EE9-4ED4BF9CDAB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFBFA437-1905-4567-8EE9-4ED4BF9CDAB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFBFA437-1905-4567-8EE9-4ED4BF9CDAB8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0D838941-A377-4C15-AC9D-2D980882F4C5} = {F41946A6-3EDB-4CBE-A597-71D2E65CAA85}
+		{FFBFA437-1905-4567-8EE9-4ED4BF9CDAB8} = {B376B7EC-B5FE-4766-9BC9-6C3FA7BDA598}
+	EndGlobalSection
+EndGlobal
